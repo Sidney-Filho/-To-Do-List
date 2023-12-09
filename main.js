@@ -51,7 +51,7 @@ addButon.addEventListener("click", function () {
       } else {
         newTaskText.style.textDecoration = "none";
         newTaskText.style.color = "black";
-        newTaskItem.style.background = "#e8e8e8e8";
+        newTaskItem.style.background = "white";
       }
     });
   }

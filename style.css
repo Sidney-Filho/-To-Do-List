@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,15 +22,15 @@ body {
   align-items: center;
   background-color: #f3f3f3;
   height: 80px;
-  gap: 10px;
+  gap: 15px;
 }
 
 .top-header h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 
 .top-header i {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 .input-area {
@@ -41,7 +45,7 @@ body {
   background: #e2e2e2;
   border-radius: 8px;
   border: none;
-  font-size: 1rem;
+  font-size: 1.7rem;
   padding: 20px;
   width: 70%;
   transition: all 0.2s;
@@ -76,6 +80,10 @@ body {
   margin-top: 80px;
 }
 
+.header-list h1 {
+  font-size: 2.7rem;
+}
+
 #lista {
   display: flex;
   justify-content: center;
@@ -87,22 +95,24 @@ body {
 }
 
 #lista h1 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   color: #424242;
 }
 
 .newItem {
   display: flex;
-  background-color: #e8e8e8e8;
+  background-color: white;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 15px;
   width: 40%; 
   justify-content: space-between;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.02);
 }
 
 .newItem p {
   max-width: 80%;
   word-wrap: break-word;
+  font-size: 1.6rem;
   padding: 0 15px 0 0;
 }
 
