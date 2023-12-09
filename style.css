@@ -12,7 +12,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
-  background: linear-gradient(356deg, rgba(245,245,245,1) 0%, rgba(245,245,245,1) 45%, rgba(255,255,255,1) 100%);
+  background: #f7f7f7f7;
+  height: 100dvh;
 }
 
 main {
