@@ -9,7 +9,7 @@ addButon.addEventListener("click", function () {
 
   //Verifica se o input está vazio.
   if (inputText == "") {
-    window.alert("Escreva alguma coisa!");
+    window.alert("Campo vazio, Digite alguma tarefa!");
     return;
   }
 
