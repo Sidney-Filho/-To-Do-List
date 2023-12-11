@@ -45,13 +45,9 @@ addButon.addEventListener("click", function () {
     //Adiciona estilos se o input checkbox for marcado
     newCheckbox.addEventListener("click", () => {
       if (newCheckbox.checked) {
-        newTaskText.style.textDecoration = "line-through";
-        newTaskText.style.color = "white";
-        newTaskItem.style.background = "green";
+        newTaskItem.classList.add("newItemChecked")
       } else {
-        newTaskText.style.textDecoration = "none";
-        newTaskText.style.color = "black";
-        newTaskItem.style.background = "white";
+        newTaskItem.classList.remove("newItemChecked")
       }
     });
   }

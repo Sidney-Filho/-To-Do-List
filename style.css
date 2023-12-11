@@ -121,6 +121,12 @@ main {
   padding: 0 15px 0 0;
 }
 
+.newItemChecked {
+  background-color: green;
+  color: white;
+  text-decoration: line-through;
+}
+
 input[type="checkbox"]:hover {
   cursor: pointer;
 }
