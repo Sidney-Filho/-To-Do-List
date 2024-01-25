@@ -104,12 +104,33 @@ main {
   color: #424242;
 }
 
+.containerText {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+}
+
+.btnRemove {
+  padding: 1rem;
+  background-color: red;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+
+.btnRemove:hover {
+  cursor: pointer;
+  background-color: rgb(165, 0, 0);
+}
+
 .newItem {
   display: flex;
-  background-color: white;
+  background-color: rgb(226, 226, 226);
   padding: 30px;
   border-radius: 15px;
-  width: 40%; 
+  width: 50%; 
   justify-content: space-between;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.02);
 }
@@ -119,12 +140,21 @@ main {
   word-wrap: break-word;
   font-size: 1.6rem;
   padding: 0 15px 0 0;
+  font-family: 'Poppins', sans-serif;
+  text-transform: capitalize;
 }
 
 .newItemChecked {
   background-color: green;
   color: white;
+}
+
+.newItemChecked p {
   text-decoration: line-through;
+}
+
+input[type="checkbox"] {
+  padding: 1rem;
 }
 
 input[type="checkbox"]:hover {
