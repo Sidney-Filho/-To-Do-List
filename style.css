@@ -12,7 +12,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   color: black;
-  background: #f7f7f7f7;
+  background: #d4d4d4f7;
   height: 100dvh;
 }
 
@@ -47,18 +47,28 @@ main {
 }
 
 #taskInput {
-  border: 1px solid black;
-  background: white;
-  border-radius: 8px;
+  border: none;
+  border-bottom: 2px solid rgb(44, 40, 40);
+  background: transparent;
   font-size: 1.7rem;
   padding: 2rem;
   width: 70%;
   transition: all 0.2s;
 }
 
+#taskInput:focus {
+  border: none;
+  background: none;
+}
+
 #taskInput:hover {
   transition: all 0.2s;
   box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.171);
+}
+
+#checkBox {
+  background: none;
+  border: 2px solid red;
 }
 
 .input-area button {
@@ -67,8 +77,9 @@ main {
   border-radius: 8px;
   border: none;
   padding: 10px;
-  min-width: 15%;
+  min-width: 10%;
   transition: background 0.2s;
+  font-size: 1.7rem;
 }
 
 .input-area button:hover {
@@ -85,9 +96,6 @@ main {
   margin-top: 80px;
 }
 
-.header-list h1 {
-  font-size: 2.7rem;
-}
 
 #lista {
   display: flex;
@@ -114,22 +122,26 @@ main {
 
 .btnRemove {
   padding: 1rem;
-  background-color: red;
-  color: white;
-  border-radius: 8px;
+  background: none;
   border: none;
 }
 
-.btnRemove:hover {
+.btnRemove i {
+  color: rgb(182, 182, 182);
+  font-size: 2rem;
+  padding: 1.5rem;
+}
+
+.btnRemove i:hover {
   cursor: pointer;
-  background-color: rgb(165, 0, 0);
+  color: rgb(165, 0, 0);
 }
 
 .newItem {
   display: flex;
-  background-color: rgb(226, 226, 226);
-  padding: 30px;
-  border-radius: 15px;
+  background-color: rgb(247, 247, 247);
+  padding: 20px;
+  border-radius: 8px;
   width: 50%; 
   justify-content: space-between;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.02);
@@ -139,9 +151,8 @@ main {
   max-width: 80%;
   word-wrap: break-word;
   font-size: 1.6rem;
-  padding: 0 15px 0 0;
+  padding: 0 15px 0 20px;
   font-family: 'Poppins', sans-serif;
-  text-transform: capitalize;
 }
 
 .newItemChecked {

@@ -33,9 +33,13 @@ addButon.addEventListener("click", function () {
 
     var newRemoveTask = document.createElement("button");
     newRemoveTask.classList.add("btnRemove");
-    newRemoveTask.textContent = "Remover";
+    var iconDelete = document.createElement("i")
+    iconDelete.classList.add("fa-solid")
+    iconDelete.classList.add("fa-trash-can")
+    newRemoveTask.appendChild(iconDelete)
 
     var newCheckbox = document.createElement("input");
+    newCheckbox.classList.add("checkBox")
     newCheckbox.type = "checkbox";
 
     var newTitleTask = document.querySelector("#lista h1");
